@@ -36,12 +36,48 @@
 
 .hero {
   text-align: center;
+  max-width: 1000px;
   font-family: "Playfair Display SC", serif;
   font-weight: 400;
   font-style: normal;
   background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/122/698/original/IMG_3300.jpeg?1712776074);
   background-size: cover;
   background-position: center;
-  margin: 10px;
-  padding: 80px;
+  margin: 5px auto;
+  padding: 100px 10px;
+}
+button {
+  font-size: 16px;
+  font-family: "Playfair Display SC", serif;
+  font-weight: 400;
+  font-style: italic;
+  padding: 25px auto;
+  margin: 35px 25px;
+  border: 1px solid black;
+  border-radius: 5px;
+  background: linear-gradient(
+    180.3deg,
+    rgb(221, 221, 221) 5.5%,
+    rgb(110, 136, 161) 90.2%
+  );
+}
+a:link {
+  text-decoration: none;
+}
+a:visited {
+  color: darkolivegreen;
+}
+a:hover {
+  color: greenyellow;
+}
+a:active {
+  color: aqua;
+}
+.boxes {
+  display: grid;
+  grid-gap: 9px;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(8, 1fr 1fr);
+}
+.box {
 }
