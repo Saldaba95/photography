@@ -64,20 +64,39 @@ button {
 a:link {
   text-decoration: none;
 }
-a:visited {
+header a:visited {
   color: darkolivegreen;
 }
-a:hover {
+header a:hover {
   color: greenyellow;
 }
-a:active {
-  color: aqua;
-}
+
 .boxes {
   display: grid;
   grid-gap: 9px;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(8, 1fr 1fr);
 }
-.box {
+footer {
+  text-align: center;
+  padding: 80px 30px;
+  font-family: "Playfair Display SC", serif;
+  font-weight: 200;
+  font-style: italic;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)),
+    url("../images/footer.jpeg");
+  color: aliceblue;
+  font-size: 11px;
+  margin-bottom: none;
+}
+footer a:visited {
+  color: lightpink;
+}
+footer a:hover {
+  color: lightskyblue;
+}
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
 }
