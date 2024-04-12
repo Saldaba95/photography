@@ -86,8 +86,9 @@ footer {
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)),
     url("../images/footer.jpeg");
   color: aliceblue;
-  font-size: 11px;
-  margin-bottom: none;
+  font-size: 22px;
+  background-size: cover;
+  line-height: 20px;
 }
 footer a:visited {
   color: lightpink;
@@ -97,6 +98,37 @@ footer a:hover {
 }
 .grid {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-gap: 35px;
+  grid-template-rows: 1fr;
   grid-template-columns: 1fr 1fr 1fr;
+}
+
+.grid-2 {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.pictures {
+  max-width: 1200px;
+}
+.grid-2 img {
+  width: 97%;
+}
+
+@media (max-width: 700px) {
+  .grid-2 {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 200px;
+  }
+  .grid {
+    display: grid;
+    grid-gap: 35px;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+  }
+  footer {
+    font-size: 18px;
+  }
 }
