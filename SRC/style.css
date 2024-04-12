@@ -45,6 +45,7 @@
   background-position: center;
   margin: 5px auto;
   padding: 100px 10px;
+  margin-bottom: 40px;
 }
 button {
   font-size: 16px;
@@ -71,15 +72,9 @@ header a:hover {
   color: greenyellow;
 }
 
-.boxes {
-  display: grid;
-  grid-gap: 9px;
-  grid-template-columns: 1fr;
-  grid-template-rows: repeat(8, 1fr 1fr);
-}
 footer {
   text-align: center;
-  padding: 80px 30px;
+  padding: 40px 30px;
   font-family: "Playfair Display SC", serif;
   font-weight: 200;
   font-style: italic;
@@ -105,7 +100,7 @@ footer a:hover {
 
 .grid-2 {
   display: grid;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
   grid-template-columns: 1fr 1fr 1fr;
 }
 .pictures {
@@ -115,13 +110,14 @@ footer a:hover {
   width: 97%;
 }
 
-@media (max-width: 700px) {
+@media (min-width: 699px) {
   .grid-2 {
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    width: 200px;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
   }
+}
+@media (max-width: 700px) {
   .grid {
     display: grid;
     grid-gap: 35px;
@@ -130,5 +126,10 @@ footer a:hover {
   }
   footer {
     font-size: 18px;
+  }
+  .grid-2 {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
   }
 }
