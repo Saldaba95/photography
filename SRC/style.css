@@ -33,7 +33,19 @@
   font-weight: 900;
   font-style: italic;
 }
-
+body {
+  background: black;
+}
+.container {
+  background: linear-gradient(to top, #09203f 0%, #537895 100%);
+  max-width: 1200px;
+  margin: 0 auto;
+}
+section {
+  max-width: 90%;
+  margin: 0 auto;
+  padding: 100px;
+}
 .hero {
   text-align: center;
   max-width: 1000px;
@@ -44,8 +56,7 @@
   background-size: cover;
   background-position: center;
   margin: 5px auto;
-  padding: 100px 10px;
-  margin-bottom: 40px;
+  padding: 100px;
 }
 button {
   font-size: 16px;
@@ -71,6 +82,31 @@ header a:visited {
 header a:hover {
   color: greenyellow;
 }
+.card-spot {
+  background: linear-gradient(to top, #df89b5 0%, #bfd9fe 100%);
+  text-align: center;
+  font-family: "Playfair Display SC", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+.grid {
+  display: grid;
+  grid-gap: 40px;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.grid-2 {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.pictures {
+  max-width: 1200px;
+}
+.grid-2 img {
+  width: 100%;
+}
 
 footer {
   text-align: center;
@@ -91,32 +127,34 @@ footer a:visited {
 footer a:hover {
   color: lightskyblue;
 }
-.grid {
-  display: grid;
-  grid-gap: 35px;
-  grid-template-rows: 1fr;
-  grid-template-columns: 1fr 1fr 1fr;
-}
 
-.grid-2 {
-  display: grid;
-  grid-template-rows: 1fr;
-  grid-template-columns: 1fr 1fr 1fr;
+@media (min-width: 500px) {
+  .grid-2 {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+  }
+  .grid {
+    display: grid;
+    grid-gap: 35px;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+  }
 }
-.pictures {
-  max-width: 1200px;
-}
-.grid-2 img {
-  width: 97%;
-}
-
 @media (min-width: 699px) {
+  .grid {
+    display: grid;
+    grid-gap: 35px;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
   .grid-2 {
     display: grid;
     grid-template-rows: 1fr;
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
+
 @media (max-width: 700px) {
   .grid {
     display: grid;
@@ -131,5 +169,18 @@ footer a:hover {
     display: grid;
     grid-template-rows: 1fr;
     grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 499px) {
+  .grid {
+    display: grid;
+    grid-gap: 35px;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+  }
+  .grid-2 {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
   }
 }
