@@ -105,12 +105,27 @@ header a:hover {
   font-weight: 400;
   font-style: normal;
 }
-
-.card img {
-  width: 100%;
+.card button {
+  background: black;
 }
+.card a {
+  color: aliceblue;
+  text-decoration: none;
+}
+.card:hover a {
+  color: lightskyblue;
+}
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.img-responsive {
+  width: 100%;
+  aspect-ratio: 1/1;
+}
+
 .dress button {
-  margin-top: 185px;
+  margin-top: 80px;
 }
 .spider button {
   margin-top: 80px;
